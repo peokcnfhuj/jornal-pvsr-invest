@@ -75,8 +75,9 @@ button{font-family:inherit;cursor:pointer}
 }
 .ticker-strip{
   display:flex;flex-wrap:wrap;justify-content:center;
-  padding:6px 0 2px;
+  padding:6px 0 2px;row-gap:12px;
 }
+.tick-var.neutral{color:var(--silver-dim)}
 .tick{flex:1 1 140px;min-width:130px;text-align:center;padding:6px 14px}
 .tick + .tick{border-left:1px solid var(--line)}
 .tick-name{display:block;font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--silver-dim)}

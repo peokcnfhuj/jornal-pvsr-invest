@@ -226,3 +226,10 @@ footer{
 .sitenav a{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--silver-dim);text-decoration:none}
 .sitenav a:hover{color:var(--gold-bright)}
 .sitenav a.active{color:var(--gold-bright);font-weight:700}
+
+/* Faixa em destaque para a página Ao vivo */
+.live-banner{max-width:1060px;margin:18px auto 0;padding:14px 20px;display:flex;align-items:center;gap:12px;border:1px solid var(--gold-faint);border-left:3px solid var(--gold);background:rgba(201,162,39,.07);color:var(--text);text-decoration:none}
+.live-banner:hover{border-color:var(--gold);background:rgba(201,162,39,.12)}
+.live-banner-text{font-size:16px;flex:1}
+.live-banner-text strong{color:var(--gold-bright);letter-spacing:.14em}
+.live-banner-cta{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-bright);white-space:nowrap}

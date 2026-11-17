@@ -1,5 +1,6 @@
 // Jornal PVSR INVEST — leitor de PDF embutido
 (function () {
+  if (!document.getElementById('reader')) return;
   var reader = document.getElementById('reader');
   var frame = document.getElementById('reader-frame');
   var title = document.getElementById('reader-title');
@@ -31,6 +32,13 @@
 
 // Painel ao vivo — cotações via TradingView scanner + alternative.me (sem chave, sem login)
 (function () {
+  if (!document.getElementById('live-updated')) return;
+  var dateEl = document.getElementById('masthead-date');
+  if (dateEl) {
+    var dd = new Date();
+    var txt = dd.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    dateEl.textContent = txt.charAt(0).toUpperCase() + txt.slice(1);
+  }
   var SCAN_URL = 'https://scanner.tradingview.com/global/scan';
   var TV = 'https://scanner.tradingview.com/symbol?symbol=';
   var TICKERS = [

@@ -220,3 +220,9 @@ footer{
   font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.14em;
   text-transform:uppercase;color:var(--gold);font-weight:700;margin:24px 0 8px;
 }
+
+/* Navegação entre Edição do dia e Ao vivo */
+.sitenav{max-width:1060px;margin:0 auto;padding:10px 20px;display:flex;justify-content:center;gap:28px;border-bottom:1px solid rgba(201,162,39,.35)}
+.sitenav a{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--silver-dim);text-decoration:none}
+.sitenav a:hover{color:var(--gold-bright)}
+.sitenav a.active{color:var(--gold-bright);font-weight:700}

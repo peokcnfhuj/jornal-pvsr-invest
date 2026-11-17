@@ -22,6 +22,11 @@
   </div>
 </header>
 
+<nav class="sitenav" aria-label="Navegação do jornal">
+  <a href="index.html" class="active">Edição do dia</a>
+  <a href="ao-vivo.html">Ao vivo</a>
+</nav>
+
 <section class="ticker" aria-label="Painel de mercado">
   <div class="ticker-head">Painel de mercado — fechamento de segunda-feira, 16/11/2026 (edição nº 09)</div>
   <div class="ticker-strip">
@@ -40,85 +45,6 @@
     <div class="tick"><span class="tick-name">VIX (medo do mercado)</span><span class="tick-val">23,55</span><span class="tick-var down">+22,0% no dia</span></div>
     <div class="tick"><span class="tick-name">Medo e ganância</span><span class="tick-val">12 pontos</span><span class="tick-var down">medo extremo</span></div>
   </div>
-</section>
-
-<section class="live" aria-label="Painel ao vivo">
-  <div class="live-head">
-    <span class="live-badge"><span class="live-dot"></span> AO VIVO</span>
-    <span class="live-updated" id="live-updated">Fechamento de 16/11/2026 (edição nº 09)</span>
-  </div>
-  <div class="ticker-strip live-strip">
-    <div class="tick"><span class="tick-name">Ibovespa</span><span class="tick-val" id="live-ibov">169.295,41</span><span class="tick-var down" id="live-ibov-var">−1,83% no dia</span></div>
-    <div class="tick"><span class="tick-name">Dólar comercial</span><span class="tick-val" id="live-usd">R$ 5,7777</span><span class="tick-var up" id="live-usd-var">+2,17% no dia</span></div>
-    <div class="tick"><span class="tick-name">S&amp;P 500</span><span class="tick-val" id="live-spx">7.416,59</span><span class="tick-var down" id="live-spx-var">−1,92% no dia</span></div>
-    <div class="tick"><span class="tick-name">Nasdaq</span><span class="tick-val" id="live-ixic">24.509,76</span><span class="tick-var down" id="live-ixic-var">−2,49% no dia</span></div>
-    <div class="tick"><span class="tick-name">Dow Jones</span><span class="tick-val" id="live-dji">51.608,17</span><span class="tick-var down" id="live-dji-var">−1,41% no dia</span></div>
-    <div class="tick"><span class="tick-name">Bitcoin</span><span class="tick-val" id="live-btc">US$ 64.888,80</span><span class="tick-var up" id="live-btc-var">+0,01% no dia</span></div>
-    <div class="tick"><span class="tick-name">Euro</span><span class="tick-val" id="live-eur">R$ 6,3488</span><span class="tick-var down" id="live-eur-var">−0,18% no dia</span></div>
-    <div class="tick"><span class="tick-name">Ouro</span><span class="tick-val" id="live-gold">US$ 3.855,88</span><span class="tick-var down" id="live-gold-var">−0,01% no dia</span></div>
-    <div class="tick"><span class="tick-name">Petróleo WTI</span><span class="tick-val" id="live-wti">US$ 85,72</span><span class="tick-var down" id="live-wti-var">−3,21% no dia</span></div>
-    <div class="tick"><span class="tick-name">VIX</span><span class="tick-val" id="live-vix">23,55</span><span class="tick-var down" id="live-vix-var">+22,0% no dia</span></div>
-    <div class="tick"><span class="tick-name">DXY</span><span class="tick-val" id="live-dxy">103,58</span><span class="tick-var up" id="live-dxy-var">+0,16% no dia</span></div>
-    <div class="tick"><span class="tick-name">Medo e ganância</span><span class="tick-val" id="live-fng">12 pontos</span><span class="tick-var down" id="live-fng-var">medo extremo</span></div>
-  </div>
-  <h3 class="live-group">B3 — Brasil</h3>
-  <div class="ticker-strip live-strip">
-    <div class="tick"><span class="tick-name">Petrobras (PETR4)</span><span class="tick-val" id="live-petr4">R$ 44,02</span><span class="tick-var down" id="live-petr4-var">−2,83% no dia</span></div>
-    <div class="tick"><span class="tick-name">Vale (VALE3)</span><span class="tick-val" id="live-vale3">R$ 60,70</span><span class="tick-var down" id="live-vale3-var">−4,41% no dia</span></div>
-    <div class="tick"><span class="tick-name">Itaú (ITUB4)</span><span class="tick-val" id="live-itub4">R$ 41,30</span><span class="tick-var down" id="live-itub4-var">−2,29% no dia</span></div>
-    <div class="tick"><span class="tick-name">Bradesco (BBDC4)</span><span class="tick-val" id="live-bbdc4">R$ 14,23</span><span class="tick-var down" id="live-bbdc4-var">−2,00% no dia</span></div>
-    <div class="tick"><span class="tick-name">Ambev (ABEV3)</span><span class="tick-val" id="live-abev3">R$ 15,87</span><span class="tick-var up" id="live-abev3-var">+0,51% no dia</span></div>
-    <div class="tick"><span class="tick-name">Weg (WEGE3)</span><span class="tick-val" id="live-wege3">R$ 50,40</span><span class="tick-var down" id="live-wege3-var">−1,77% no dia</span></div>
-    <div class="tick"><span class="tick-name">Magazine Luiza (MGLU3)</span><span class="tick-val" id="live-mglu3">R$ 7,49</span><span class="tick-var down" id="live-mglu3-var">−4,10% no dia</span></div>
-    <div class="tick"><span class="tick-name">B3 (B3SA3)</span><span class="tick-val" id="live-b3sa3">R$ 14,81</span><span class="tick-var down" id="live-b3sa3-var">−0,54% no dia</span></div>
-    <div class="tick"><span class="tick-name">Banco do Brasil (BBAS3)</span><span class="tick-val" id="live-bbas3">R$ 14,95</span><span class="tick-var down" id="live-bbas3-var">−0,99% no dia</span></div>
-    <div class="tick"><span class="tick-name">Suzano (SUZB3)</span><span class="tick-val" id="live-suzb3">R$ 55,50</span><span class="tick-var up" id="live-suzb3-var">+1,33% no dia</span></div>
-  </div>
-  <h3 class="live-group">Nasdaq — EUA</h3>
-  <div class="ticker-strip live-strip">
-    <div class="tick"><span class="tick-name">Apple (AAPL)</span><span class="tick-val" id="live-aapl">US$ 352,78</span><span class="tick-var down" id="live-aapl-var">−0,98% no dia</span></div>
-    <div class="tick"><span class="tick-name">Microsoft (MSFT)</span><span class="tick-val" id="live-msft">US$ 517,99</span><span class="tick-var down" id="live-msft-var">−1,12% no dia</span></div>
-    <div class="tick"><span class="tick-name">Nvidia (NVDA)</span><span class="tick-val" id="live-nvda">US$ 156,14</span><span class="tick-var down" id="live-nvda-var">−4,12% no dia</span></div>
-    <div class="tick"><span class="tick-name">Amazon (AMZN)</span><span class="tick-val" id="live-amzn">US$ 257,75</span><span class="tick-var down" id="live-amzn-var">−3,34% no dia</span></div>
-    <div class="tick"><span class="tick-name">Alphabet (GOOGL)</span><span class="tick-val" id="live-googl">US$ 283,72</span><span class="tick-var down" id="live-googl-var">−4,07% no dia</span></div>
-    <div class="tick"><span class="tick-name">Meta (META)</span><span class="tick-val" id="live-meta">US$ 626,41</span><span class="tick-var down" id="live-meta-var">−2,38% no dia</span></div>
-    <div class="tick"><span class="tick-name">Tesla (TSLA)</span><span class="tick-val" id="live-tsla">US$ 379,74</span><span class="tick-var down" id="live-tsla-var">−2,69% no dia</span></div>
-    <div class="tick"><span class="tick-name">AMD (AMD)</span><span class="tick-val" id="live-amd">US$ 504,28</span><span class="tick-var down" id="live-amd-var">−5,58% no dia</span></div>
-    <div class="tick"><span class="tick-name">Netflix (NFLX)</span><span class="tick-val" id="live-nflx">US$ 60,75</span><span class="tick-var down" id="live-nflx-var">−2,25% no dia</span></div>
-    <div class="tick"><span class="tick-name">Broadcom (AVGO)</span><span class="tick-val" id="live-avgo">US$ 333,40</span><span class="tick-var down" id="live-avgo-var">−3,92% no dia</span></div>
-  </div>
-  <h3 class="live-group">NYSE — EUA</h3>
-  <div class="ticker-strip live-strip">
-    <div class="tick"><span class="tick-name">JPMorgan (JPM)</span><span class="tick-val" id="live-jpm">US$ 338,21</span><span class="tick-var down" id="live-jpm-var">−2,31% no dia</span></div>
-    <div class="tick"><span class="tick-name">Visa (V)</span><span class="tick-val" id="live-v">US$ 426,46</span><span class="tick-var up" id="live-v-var">+0,16% no dia</span></div>
-    <div class="tick"><span class="tick-name">UnitedHealth (UNH)</span><span class="tick-val" id="live-unh">US$ 412,02</span><span class="tick-var up" id="live-unh-var">+1,12% no dia</span></div>
-    <div class="tick"><span class="tick-name">Mastercard (MA)</span><span class="tick-val" id="live-ma">US$ 661,71</span><span class="tick-var up" id="live-ma-var">+0,08% no dia</span></div>
-    <div class="tick"><span class="tick-name">Home Depot (HD)</span><span class="tick-val" id="live-hd">US$ 347,51</span><span class="tick-var down" id="live-hd-var">−0,34% no dia</span></div>
-    <div class="tick"><span class="tick-name">P&amp;G (PG)</span><span class="tick-val" id="live-pg">US$ 173,02</span><span class="tick-var up" id="live-pg-var">+1,90% no dia</span></div>
-    <div class="tick"><span class="tick-name">Exxon (XOM)</span><span class="tick-val" id="live-xom">US$ 166,87</span><span class="tick-var down" id="live-xom-var">−2,18% no dia</span></div>
-    <div class="tick"><span class="tick-name">Eli Lilly (LLY)</span><span class="tick-val" id="live-lly">US$ 1.431,67</span><span class="tick-var down" id="live-lly-var">−0,82% no dia</span></div>
-    <div class="tick"><span class="tick-name">Bank of America (BAC)</span><span class="tick-val" id="live-bac">US$ 50,08</span><span class="tick-var down" id="live-bac-var">−1,84% no dia</span></div>
-    <div class="tick"><span class="tick-name">Chevron (CVX)</span><span class="tick-val" id="live-cvx">US$ 217,14</span><span class="tick-var down" id="live-cvx-var">−1,25% no dia</span></div>
-  </div>
-  <h3 class="live-group">Europa</h3>
-  <div class="ticker-strip live-strip">
-    <div class="tick"><span class="tick-name">L'Oréal (OR)</span><span class="tick-val" id="live-or">€ 448,15</span><span class="tick-var down" id="live-or-var">−0,44% no dia</span></div>
-    <div class="tick"><span class="tick-name">ASML (ASML)</span><span class="tick-val" id="live-asml">€ 1.290,20</span><span class="tick-var down" id="live-asml-var">−1,26% no dia</span></div>
-    <div class="tick"><span class="tick-name">SAP (SAP)</span><span class="tick-val" id="live-sap">€ 207,25</span><span class="tick-var down" id="live-sap-var">−2,88% no dia</span></div>
-    <div class="tick"><span class="tick-name">Shell (SHEL)</span><span class="tick-val" id="live-shel">£ 36,88</span><span class="tick-var down" id="live-shel-var">−0,49% no dia</span></div>
-    <div class="tick"><span class="tick-name">Nestlé (NESN)</span><span class="tick-val" id="live-nesn">CHF 87,27</span><span class="tick-var down" id="live-nesn-var">−0,96% no dia</span></div>
-    <div class="tick"><span class="tick-name">HSBC (HSBA)</span><span class="tick-val" id="live-hsba">£ 13,36</span><span class="tick-var down" id="live-hsba-var">−0,83% no dia</span></div>
-    <div class="tick"><span class="tick-name">Novo Nordisk (NVO)</span><span class="tick-val" id="live-nvo">US$ 41,60</span><span class="tick-var down" id="live-nvo-var">−0,07% no dia</span></div>
-  </div>
-  <h3 class="live-group">Ásia</h3>
-  <div class="ticker-strip live-strip">
-    <div class="tick"><span class="tick-name">Toyota (7203)</span><span class="tick-val" id="live-toyota">¥ 3.414</span><span class="tick-var down" id="live-toyota-var">−0,41% no dia</span></div>
-    <div class="tick"><span class="tick-name">Sony (6758)</span><span class="tick-val" id="live-sony">¥ 4.271</span><span class="tick-var down" id="live-sony-var">−1,13% no dia</span></div>
-    <div class="tick"><span class="tick-name">SoftBank (9984)</span><span class="tick-val" id="live-softbank">¥ 3.281</span><span class="tick-var down" id="live-softbank-var">−3,95% no dia</span></div>
-    <div class="tick"><span class="tick-name">Tencent (0700)</span><span class="tick-val" id="live-tencent">HK$ 376,00</span><span class="tick-var down" id="live-tencent-var">−3,69% no dia</span></div>
-    <div class="tick"><span class="tick-name">Alibaba (9988)</span><span class="tick-val" id="live-baba">HK$ 85,45</span><span class="tick-var down" id="live-baba-var">−5,21% no dia</span></div>
-  </div>
-  <div class="live-note">Ações e bolsas com atraso de 10–15 min · câmbio, ouro e cripto em tempo real · Fontes: TradingView e alternative.me</div>
 </section>
 
 <main>

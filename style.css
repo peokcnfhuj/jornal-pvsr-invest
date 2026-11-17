@@ -37,6 +37,7 @@ body::before{
 header,section,main,footer{position:relative;z-index:1}
 a{color:var(--gold-bright)}
 button{font-family:inherit;cursor:pointer}
+img,iframe,video{max-width:100%}
 
 /* Masthead */
 .masthead{border-bottom:1px solid var(--gold-faint);padding:0 0 22px}
@@ -44,20 +45,20 @@ button{font-family:inherit;cursor:pointer}
   content:"";
   position:absolute;
   left:50%;top:-140px;
-  width:900px;height:420px;
+  width:min(900px,100vw);height:420px;
   transform:translateX(-50%);
   background:radial-gradient(ellipse at center,rgba(201,162,39,.10),transparent 65%);
   pointer-events:none;
 }
 .masthead-top{
   display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
-  max-width:1060px;margin:0 auto;padding:16px 20px 0;
+  max-width:1280px;margin:0 auto;padding:16px 20px 0;
   font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.12em;
   text-transform:uppercase;color:var(--silver-dim);
 }
 .masthead-ed{color:var(--gold-bright)}
 .masthead-title{text-align:center;padding:26px 20px 4px;position:relative}
-.monogram{font-family:Georgia,serif;font-weight:700;font-size:56px;letter-spacing:.04em;line-height:1}
+.monogram{font-family:Georgia,serif;font-weight:700;font-size:clamp(34px,7vw,56px);letter-spacing:.04em;line-height:1}
 .mono-pvsr{color:#e8e8ec}
 .mono-invest{color:var(--gold)}
 .masthead-sub{
@@ -68,7 +69,7 @@ button{font-family:inherit;cursor:pointer}
 .masthead-tag{margin-top:10px;font-style:italic;color:var(--text-dim);font-size:16px}
 
 /* Ticker — faixa única, sem caixinhas */
-.ticker{max-width:1060px;margin:26px auto 0;padding:0 20px}
+.ticker{max-width:1280px;margin:26px auto 0;padding:0 20px}
 .ticker-head{
   font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.14em;
   text-transform:uppercase;color:var(--silver-dim);margin-bottom:10px;text-align:center;
@@ -87,8 +88,8 @@ button{font-family:inherit;cursor:pointer}
 .tick-var.down{color:var(--red)}
 
 /* Layout */
-main{max-width:1060px;margin:0 auto;padding:0 20px 40px}
-h1{font-size:44px;line-height:1.15;margin:10px 0 14px}
+main{max-width:1280px;margin:0 auto;padding:0 20px 40px}
+h1{font-size:clamp(26px,4.5vw,44px);line-height:1.15;margin:10px 0 14px}
 h2{font-size:26px;line-height:1.2;margin:0 0 10px}
 
 /* Hero — único destaque grande */
@@ -177,25 +178,31 @@ footer{
 .footer-note{margin-top:6px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--silver-dim)}
 
 @media (max-width:900px){
-  h1{font-size:32px}
-  .monogram{font-size:42px}
+  .tick{flex:1 1 30%;min-width:0}
   .row{grid-template-columns:1fr;gap:10px}
   .row-actions{justify-content:flex-start}
 }
 @media (max-width:600px){
   body::before{opacity:.55}
-  h1{font-size:27px}
-  .monogram{font-size:34px}
-  .masthead-top{justify-content:center;text-align:center}
+  .masthead-top{justify-content:center;text-align:center;padding:14px 14px 0}
+  .ticker,.live{padding-left:14px;padding-right:14px}
+  .sitenav{padding:10px 14px}
+  .live-banner{padding:12px 14px;flex-wrap:wrap}
+  .live-banner-text{font-size:15px}
+  .live-banner-cta{margin-left:auto}
+  main{padding:0 14px 40px}
+  footer{padding:30px 14px 38px}
   .tick{flex:1 1 45%;min-width:0}
   .tick + .tick{border-left:0}
   .tick:nth-child(even){border-left:1px solid var(--line)}
+  .tick-val{font-size:18px}
+  .hero-actions .btn{flex:1 1 160px;text-align:center}
   .reader iframe{height:70vh;min-height:440px}
   .educacao{padding-left:18px}
 }
 
 /* Ao vivo */
-.live{max-width:1060px;margin:36px auto 0;padding:0 20px}
+.live{max-width:1280px;margin:36px auto 0;padding:0 20px}
 .live-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
 .live-badge{
   font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.16em;
@@ -222,14 +229,18 @@ footer{
 }
 
 /* Navegação entre Edição do dia e Ao vivo */
-.sitenav{max-width:1060px;margin:0 auto;padding:10px 20px;display:flex;justify-content:center;gap:28px;border-bottom:1px solid rgba(201,162,39,.35)}
+.sitenav{max-width:1280px;margin:0 auto;padding:10px 20px;display:flex;justify-content:center;gap:28px;border-bottom:1px solid rgba(201,162,39,.35)}
 .sitenav a{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--silver-dim);text-decoration:none}
 .sitenav a:hover{color:var(--gold-bright)}
 .sitenav a.active{color:var(--gold-bright);font-weight:700}
 
 /* Faixa em destaque para a página Ao vivo */
-.live-banner{max-width:1060px;margin:18px auto 0;padding:14px 20px;display:flex;align-items:center;gap:12px;border:1px solid var(--gold-faint);border-left:3px solid var(--gold);background:rgba(201,162,39,.07);color:var(--text);text-decoration:none}
+.live-banner{max-width:1280px;margin:18px auto 0;padding:14px 20px;display:flex;align-items:center;gap:12px;border:1px solid var(--gold-faint);border-left:3px solid var(--gold);background:rgba(201,162,39,.07);color:var(--text);text-decoration:none}
 .live-banner:hover{border-color:var(--gold);background:rgba(201,162,39,.12)}
 .live-banner-text{font-size:16px;flex:1}
 .live-banner-text strong{color:var(--gold-bright);letter-spacing:.14em}
 .live-banner-cta{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-bright);white-space:nowrap}
+
+@media (min-width:1600px){
+  .masthead-top,.ticker,.live,.sitenav,.live-banner,main{max-width:1440px}
+}

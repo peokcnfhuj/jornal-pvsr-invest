@@ -31,19 +31,62 @@
 
 // Painel ao vivo — cotações via TradingView scanner + alternative.me (sem chave, sem login)
 (function () {
+  var SCAN_URL = 'https://scanner.tradingview.com/global/scan';
   var TV = 'https://scanner.tradingview.com/symbol?symbol=';
-  var ITEMS = [
-    { id: 'ibov', symbol: 'BMFBOVESPA%3AIBOV', dec: 2, prefix: '' },
-    { id: 'usd', symbol: 'FX_IDC%3AUSDBRL', dec: 4, prefix: 'R$ ' },
-    { id: 'spx', symbol: 'SP%3ASPX', dec: 2, prefix: '' },
-    { id: 'ixic', symbol: 'NASDAQ%3AIXIC', dec: 2, prefix: '' },
-    { id: 'dji', symbol: 'DJ%3ADJI', dec: 2, prefix: '' },
-    { id: 'btc', symbol: 'BINANCE%3ABTCUSDT', dec: 2, prefix: 'US$ ' },
-    { id: 'eur', symbol: 'FX_IDC%3AEURBRL', dec: 4, prefix: 'R$ ' },
-    { id: 'gold', symbol: 'TVC%3AGOLD', dec: 2, prefix: 'US$ ' },
-    { id: 'wti', symbol: 'NYMEX%3ACL1%21', dec: 2, prefix: 'US$ ' },
-    { id: 'vix', symbol: 'TVC%3AVIX', dec: 2, prefix: '' },
-    { id: 'dxy', symbol: 'TVC%3ADXY', dec: 2, prefix: '' }
+  var TICKERS = [
+    { id: 'ibov', symbol: 'BMFBOVESPA:IBOV', prefix: '', dec: 2 },
+    { id: 'usd', symbol: 'FX_IDC:USDBRL', prefix: 'R$ ', dec: 4 },
+    { id: 'spx', symbol: 'SP:SPX', prefix: '', dec: 2 },
+    { id: 'ixic', symbol: 'NASDAQ:IXIC', prefix: '', dec: 2 },
+    { id: 'dji', symbol: 'DJ:DJI', prefix: '', dec: 2 },
+    { id: 'btc', symbol: 'BINANCE:BTCUSDT', prefix: 'US$ ', dec: 2 },
+    { id: 'eur', symbol: 'FX_IDC:EURBRL', prefix: 'R$ ', dec: 4 },
+    { id: 'gold', symbol: 'TVC:GOLD', prefix: 'US$ ', dec: 2 },
+    { id: 'wti', symbol: 'NYMEX:CL1!', prefix: 'US$ ', dec: 2 },
+    { id: 'vix', symbol: 'TVC:VIX', prefix: '', dec: 2, invert: true },
+    { id: 'dxy', symbol: 'TVC:DXY', prefix: '', dec: 2 },
+    { id: 'petr4', symbol: 'BMFBOVESPA:PETR4', prefix: 'R$ ', dec: 2 },
+    { id: 'vale3', symbol: 'BMFBOVESPA:VALE3', prefix: 'R$ ', dec: 2 },
+    { id: 'itub4', symbol: 'BMFBOVESPA:ITUB4', prefix: 'R$ ', dec: 2 },
+    { id: 'bbdc4', symbol: 'BMFBOVESPA:BBDC4', prefix: 'R$ ', dec: 2 },
+    { id: 'abev3', symbol: 'BMFBOVESPA:ABEV3', prefix: 'R$ ', dec: 2 },
+    { id: 'wege3', symbol: 'BMFBOVESPA:WEGE3', prefix: 'R$ ', dec: 2 },
+    { id: 'mglu3', symbol: 'BMFBOVESPA:MGLU3', prefix: 'R$ ', dec: 2 },
+    { id: 'b3sa3', symbol: 'BMFBOVESPA:B3SA3', prefix: 'R$ ', dec: 2 },
+    { id: 'bbas3', symbol: 'BMFBOVESPA:BBAS3', prefix: 'R$ ', dec: 2 },
+    { id: 'suzb3', symbol: 'BMFBOVESPA:SUZB3', prefix: 'R$ ', dec: 2 },
+    { id: 'aapl', symbol: 'NASDAQ:AAPL', prefix: 'US$ ', dec: 2 },
+    { id: 'msft', symbol: 'NASDAQ:MSFT', prefix: 'US$ ', dec: 2 },
+    { id: 'nvda', symbol: 'NASDAQ:NVDA', prefix: 'US$ ', dec: 2 },
+    { id: 'amzn', symbol: 'NASDAQ:AMZN', prefix: 'US$ ', dec: 2 },
+    { id: 'googl', symbol: 'NASDAQ:GOOGL', prefix: 'US$ ', dec: 2 },
+    { id: 'meta', symbol: 'NASDAQ:META', prefix: 'US$ ', dec: 2 },
+    { id: 'tsla', symbol: 'NASDAQ:TSLA', prefix: 'US$ ', dec: 2 },
+    { id: 'amd', symbol: 'NASDAQ:AMD', prefix: 'US$ ', dec: 2 },
+    { id: 'nflx', symbol: 'NASDAQ:NFLX', prefix: 'US$ ', dec: 2 },
+    { id: 'avgo', symbol: 'NASDAQ:AVGO', prefix: 'US$ ', dec: 2 },
+    { id: 'jpm', symbol: 'NYSE:JPM', prefix: 'US$ ', dec: 2 },
+    { id: 'v', symbol: 'NYSE:V', prefix: 'US$ ', dec: 2 },
+    { id: 'unh', symbol: 'NYSE:UNH', prefix: 'US$ ', dec: 2 },
+    { id: 'ma', symbol: 'NYSE:MA', prefix: 'US$ ', dec: 2 },
+    { id: 'hd', symbol: 'NYSE:HD', prefix: 'US$ ', dec: 2 },
+    { id: 'pg', symbol: 'NYSE:PG', prefix: 'US$ ', dec: 2 },
+    { id: 'xom', symbol: 'NYSE:XOM', prefix: 'US$ ', dec: 2 },
+    { id: 'lly', symbol: 'NYSE:LLY', prefix: 'US$ ', dec: 2 },
+    { id: 'bac', symbol: 'NYSE:BAC', prefix: 'US$ ', dec: 2 },
+    { id: 'cvx', symbol: 'NYSE:CVX', prefix: 'US$ ', dec: 2 },
+    { id: 'or', symbol: 'EURONEXT:OR', prefix: '€ ', dec: 2 },
+    { id: 'asml', symbol: 'EURONEXT:ASML', prefix: '€ ', dec: 2 },
+    { id: 'sap', symbol: 'XETR:SAP', prefix: '€ ', dec: 2 },
+    { id: 'shel', symbol: 'LSE:SHEL', prefix: '£ ', dec: 2, scale: 0.01 },
+    { id: 'nesn', symbol: 'SIX:NESN', prefix: 'CHF ', dec: 2 },
+    { id: 'hsba', symbol: 'LSE:HSBA', prefix: '£ ', dec: 2, scale: 0.01 },
+    { id: 'nvo', symbol: 'NYSE:NVO', prefix: 'US$ ', dec: 2 },
+    { id: 'toyota', symbol: 'TSE:7203', prefix: '¥ ', dec: 0 },
+    { id: 'sony', symbol: 'TSE:6758', prefix: '¥ ', dec: 0 },
+    { id: 'softbank', symbol: 'TSE:9984', prefix: '¥ ', dec: 0 },
+    { id: 'tencent', symbol: 'HKEX:700', prefix: 'HK$ ', dec: 2 },
+    { id: 'baba', symbol: 'HKEX:9988', prefix: 'HK$ ', dec: 2 }
   ];
   var updatedEl = document.getElementById('live-updated');
 
@@ -60,11 +103,11 @@
     if (invert) up = !up;
     return 'tick-var ' + (up ? 'up' : 'down');
   }
-  function setVal(it, close, change) {
-    var valEl = document.getElementById('live-' + it.id);
-    var varEl = document.getElementById('live-' + it.id + '-var');
+  function setVal(t, close, change) {
+    var valEl = document.getElementById('live-' + t.id);
+    var varEl = document.getElementById('live-' + t.id + '-var');
     if (!valEl || !varEl) return;
-    var text = it.prefix + fmtNum(close, it.dec);
+    var text = t.prefix + fmtNum(close * (t.scale || 1), t.dec);
     if (valEl.textContent !== text) {
       valEl.textContent = text;
       valEl.classList.remove('flash');
@@ -72,15 +115,38 @@
       valEl.classList.add('flash');
     }
     varEl.textContent = fmtVar(change);
-    varEl.className = varClass(change, it.id === 'vix');
+    varEl.className = varClass(change, t.invert);
   }
-  function fetchTV(it) {
-    return fetch(TV + it.symbol + '&fields=close,change').then(function (r) {
+  function fetchScan() {
+    var tickers = TICKERS.map(function (t) { return t.symbol; });
+    return fetch(SCAN_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ symbols: { tickers: tickers }, columns: ['close', 'change'] })
+    }).then(function (r) {
+      if (!r.ok) throw new Error('http ' + r.status);
+      return r.json();
+    }).then(function (d) {
+      var map = {};
+      (d.data || []).forEach(function (row) { map[row.s] = row.d; });
+      var ok = 0;
+      TICKERS.forEach(function (t) {
+        var row = map[t.symbol];
+        if (row && typeof row[0] === 'number' && typeof row[1] === 'number') {
+          setVal(t, row[0], row[1]);
+          ok++;
+        }
+      });
+      return ok > 0;
+    }).catch(function () { return false; });
+  }
+  function fetchTV(t) {
+    return fetch(TV + encodeURIComponent(t.symbol) + '&fields=close,change').then(function (r) {
       if (!r.ok) throw new Error('http ' + r.status);
       return r.json();
     }).then(function (d) {
       if (d && typeof d.close === 'number' && typeof d.change === 'number') {
-        setVal(it, d.close, d.change);
+        setVal(t, d.close, d.change);
         return true;
       }
       return false;
@@ -130,9 +196,19 @@
   }
   var timer = null;
   function fetchAll() {
-    var jobs = ITEMS.map(fetchTV);
-    jobs.push(fetchFng());
-    Promise.all(jobs).then(function (results) {
+    fetchScan().then(function (scanOk) {
+      var jobs = [fetchFng()];
+      if (!scanOk) {
+        // reserva: busca os 12 índices um a um (método da v2.4)
+        var idxIds = ['ibov', 'usd', 'spx', 'ixic', 'dji', 'btc', 'eur', 'gold', 'wti', 'vix', 'dxy'];
+        idxIds.forEach(function (id) {
+          var t = null;
+          TICKERS.forEach(function (x) { if (x.id === id) t = x; });
+          if (t) jobs.push(fetchTV(t));
+        });
+      }
+      return Promise.all(jobs);
+    }).then(function (results) {
       var anyOk = results.some(function (x) { return x; });
       stamp(anyOk);
     });

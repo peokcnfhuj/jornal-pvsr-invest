@@ -193,3 +193,24 @@ footer{
   .reader iframe{height:70vh;min-height:440px}
   .educacao{padding-left:18px}
 }
+
+/* Ao vivo */
+.live{max-width:1060px;margin:36px auto 0;padding:0 20px}
+.live-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.live-badge{
+  font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold-bright);font-weight:700;
+  display:flex;align-items:center;gap:8px;
+}
+.live-dot{
+  width:9px;height:9px;border-radius:50%;background:var(--gold);display:inline-block;
+  animation:pulse 1.6s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(201,162,39,.5)}
+  50%{opacity:.55;box-shadow:0 0 0 5px rgba(201,162,39,0)}
+}
+.live-updated{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--silver-dim)}
+.live-note{margin-top:12px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--silver-dim);text-align:center}
+.tick-val.flash{animation:tickflash 1.2s ease}
+@keyframes tickflash{0%{color:var(--gold-bright)}100%{color:var(--text)}}

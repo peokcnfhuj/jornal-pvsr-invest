@@ -129,6 +129,29 @@ h2{font-size:26px;line-height:1.2;margin:0 0 10px}
 .educacao p strong{color:var(--text)}
 .educacao-meta{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--silver-dim);margin-top:10px}
 
+/* Artigos extras — cartão em destaque depois do hero */
+.extras{
+  margin-top:48px;
+  padding:22px 24px;
+  border:1px solid var(--gold-faint);
+  border-left:3px solid var(--gold);
+  background:rgba(201,162,39,.05);
+}
+.extras-badge{
+  display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:12px;
+  letter-spacing:.18em;text-transform:uppercase;color:#111;
+  background:var(--gold);padding:5px 12px;font-weight:700;margin-bottom:12px;
+}
+.extras h2{margin:0 0 10px}
+.extras p{color:var(--text-dim);font-size:17px;max-width:860px}
+.extras-list{list-style:none;margin:16px 0 0;padding:0}
+.extras-list li{
+  padding:12px 0;border-top:1px solid var(--hairline);
+  font-size:17px;color:var(--text-dim);
+}
+.extras-list li strong{color:var(--text)}
+.extras-meta{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--silver-dim);margin-top:14px}
+
 /* Reader */
 .reader{margin-top:48px;border:1px solid var(--line)}
 .reader-bar{
@@ -199,6 +222,7 @@ footer{
   .hero-actions .btn{flex:1 1 160px;text-align:center}
   .reader iframe{height:70vh;min-height:440px}
   .educacao{padding-left:18px}
+  .extras{padding:18px}
 }
 
 /* Ao vivo */

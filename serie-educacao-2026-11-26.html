@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIX: o medidor de medo da bolsa — e por que ele dispara quando as ações caem · Série Educação — 26 de novembro de 2026 · Jornal PVSR INVEST by PSVR HOLDING TECH</title>
+<meta name="description" content="Série Educação do Jornal PVSR INVEST: o que é a volatilidade, o que o VIX mede, como ler os 28,29 pontos da edição de hoje — e por que o índice dispara quando as ações caem. Conteúdo informativo e educacional.">
+<style>
+:root{
+  --bg:#060608; --line:#232329; --hairline:#1c1c22;
+  --silver:#c0c0c8; --silver-dim:#8a8a94;
+  --gold:#c9a227; --gold-bright:#e8c85a; --gold-faint:rgba(201,162,39,.45);
+  --text:#f2f2f4; --text-dim:#b9b9c0;
+  --green:#4ade80; --red:#f87171;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;line-height:1.6;overflow-x:hidden}
+a{color:var(--gold-bright)}
+header,section,main,footer{position:relative;z-index:1}
+.masthead{border-bottom:1px solid var(--gold-faint);padding:0 0 22px}
+.masthead-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:16px 20px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--silver-dim)}
+.masthead-ed{color:var(--gold-bright)}
+.masthead-title{text-align:center;padding:26px 20px 4px}
+.monogram{font-weight:700;font-size:clamp(34px,7vw,52px);letter-spacing:.04em;line-height:1}
+.mono-pvsr{color:#e8e8ec}.mono-invest{color:var(--gold)}
+.masthead-sub{margin-top:12px;font-family:Arial,Helvetica,sans-serif;font-size:15px;letter-spacing:.22em;text-transform:uppercase;color:var(--silver)}
+.masthead-sub .gold{color:var(--gold-bright)}
+.masthead-tag{margin-top:10px;font-style:italic;color:var(--text-dim);font-size:16px}
+main{max-width:1100px;margin:0 auto;padding:0 20px 40px}
+h1{font-size:clamp(26px,4.5vw,42px);line-height:1.15;margin:10px 0 14px}
+h2{font-size:26px;line-height:1.2;margin:34px 0 10px;color:var(--gold-bright)}
+h3{font-size:20px;line-height:1.3;margin:26px 0 8px}
+p{font-size:17px;color:var(--text-dim);margin:0 0 14px}
+p strong,li strong{color:var(--text)}
+ul,ol{color:var(--text-dim);font-size:17px;margin:0 0 14px;padding-left:22px}
+li{margin-bottom:8px}
+.kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-bright)}
+.voltar{max-width:1100px;margin:0 auto;padding:16px 20px 0;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.voltar a{color:var(--gold-bright);text-decoration:none}
+.voltar a:hover{text-decoration:underline}
+.lead{font-size:19px;color:var(--text-dim);max-width:860px}
+.meta{margin-top:14px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--silver-dim)}
+.quadro{margin:26px 0;padding:6px 0 6px 24px;border-left:3px solid var(--gold)}
+.quadro-badge{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#111;background:var(--gold);padding:5px 12px;font-weight:700;margin-bottom:12px}
+.quadro h3{margin-top:0}
+.quadro p{font-size:17px;max-width:860px}
+.fonte{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--silver-dim);margin-top:6px}
+.fontes{margin-top:34px;padding-top:18px;border-top:1px solid var(--hairline);font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--silver-dim);line-height:1.7}
+.aviso{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:var(--silver-dim);margin-top:26px;padding:16px 18px;border:1px solid var(--gold-faint);background:rgba(201,162,39,.06)}
+footer{border-top:1px solid var(--gold-faint);padding:30px 20px 38px;text-align:center}
+.footer-mono{font-weight:700;font-size:30px;letter-spacing:.04em}
+.footer-by{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--silver-dim)}
+.footer-credit{margin-top:10px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:var(--silver)}
+.footer-note{margin-top:6px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--silver-dim)}
+hr.sep{border:0;border-top:1px solid var(--gold-faint);margin:56px 0}
+@media (max-width:600px){
+  main{padding:0 14px 40px}
+  .quadro{padding-left:18px}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span>Quinta-feira, 26 de novembro de 2026</span>
+    <span class="masthead-ed">Série Educação</span>
+    <span>PVSR INVEST by PSVR HOLDING TECH</span>
+  </div>
+  <div class="masthead-title">
+    <div class="monogram"><span class="mono-pvsr">PVSR</span> <span class="mono-invest">INVEST</span></div>
+    <div class="masthead-sub">Jornal <span class="gold">PVSR INVEST</span> by PSVR HOLDING TECH</div>
+    <div class="masthead-tag">Série Educação — o mercado explicado em linguagem simples, todos os dias.</div>
+  </div>
+</header>
+
+<div class="voltar"><a href="index.html">← Voltar ao jornal</a></div>
+
+<main>
+
+<article>
+  <div class="kicker">Série Educação · 26 de novembro de 2026</div>
+  <h1>VIX: o medidor de medo da bolsa — e por que ele dispara quando as ações caem</h1>
+  <p class="lead">Na quarta-feira, o Dow Jones chegou a cair mais de 1.100 pontos pela manhã e fechou em alta de 0,33%. O Nasdaq chegou a cair 4,7% e fechou em queda de 0,62%. No mesmo dia, o VIX, o índice que mede o nervosismo do mercado americano, subiu 7,32% e fechou em 28,29 pontos. Este artigo explica o que é a volatilidade, o que o VIX mede de fato, como transformar os 28,29 pontos em uma expectativa de movimento — e por que ele dispara justamente quando as ações caem.</p>
+  <div class="meta">26 de novembro de 2026 · Leitura de cerca de 13 minutos · Por Pedro Reis · PVSR INVEST by PSVR HOLDING TECH</div>
+
+  <h2>1. Uma quarta-feira de virada</h2>
+  <p>Wall Street viveu uma quarta-feira de virada. O <strong>Dow Jones</strong> chegou a cair <strong>mais de 1.100 pontos</strong> pela manhã e fechou em alta de 0,33%, a <strong>50.182,95 pontos</strong>. O <strong>Nasdaq</strong> chegou a cair <strong>4,7%</strong> pela manhã e fechou em queda de 0,62%, a <strong>23.585,80</strong>. O <strong>S&amp;P 500</strong> caiu 0,25%, a <strong>7.182,78</strong>. No mesmo pregão, a <strong>Nvidia caiu 3,91%</strong>, a US$ 149,30 — chegou a US$ 141,17 pela manhã —, na terceira queda seguida; a <strong>Anthropic subiu 1,07%</strong>, a US$ 82,79, mas fechou o segundo dia abaixo do preço de estreia, de US$ 83, depois de chegar a US$ 73,85 pela manhã.</p>
+  <p>O balanço não ficou só em Nova York. No Brasil, o <strong>Ibovespa subiu 1,58%</strong>, aos 166.684,61 pontos, com máxima intradia de 167.105,33 e mínima de 164.042,13 pontos — quase 1,9% de distância entre um extremo e outro no mesmo dia. O <strong>dólar</strong> tocou R$ 5,9734 às 9h01, caiu até R$ 5,8049 às 15h e fechou a R$ 5,8179, em queda de 1,53%. A <strong>Embraer caiu 4,00%</strong>, depois de chegar a recuar 9,6% pela manhã, com a proposta americana de tarifa de 10% sobre aeronaves prontas do Brasil.</p>
+  <p>Nas criptomoedas, o <strong>Bitcoin</strong> caiu a <strong>US$ 57.300</strong> pela manhã, tocou <strong>US$ 61.622</strong> na madrugada e era negociado a cerca de US$ 60,5 mil na manhã de hoje — uma variação de 7,5% entre a mínima e a máxima do dia. O <strong>ouro</strong> à vista chegou a cair 3%, a US$ 3.445,89 — a mínima desde agosto de 2025 — e se recuperou para cerca de US$ 3.600 na manhã de hoje. A <strong>prata</strong> à vista tocou US$ 38,65, em queda de 5,4% no dia.</p>
+  <p>Quando um dia tem viradas desse tamanho, o mercado está volátil. <strong>Volatilidade é o nome do balanço</strong> — e o VIX é o instrumento que mede o tamanho esperado desse balanço nos próximos 30 dias.</p>
+
+  <h2>2. Volatilidade, em uma frase</h2>
+  <p>Volatilidade é <strong>o quanto os preços balançam</strong>. Um ativo volátil é aquele que sobe e desce muito e rápido; um ativo pouco volátil anda devagar, com movimentos pequenos. Não é uma opinião: é uma medida do tamanho das oscilações.</p>
+  <p>Há duas formas de olhar para ela. A <strong>volatilidade realizada</strong> é a que já aconteceu: mede o tamanho dos balanços dos últimos dias, semanas ou meses. A <strong>volatilidade implícita</strong> é a que o mercado espera para frente: está embutida no preço das opções, porque quem compra uma opção está pagando pelo direito de se proteger — ou de apostar — em um movimento futuro. Quanto maior o movimento esperado, mais cara fica a opção.</p>
+  <p>Os exemplos da quarta-feira mostram a diferença entre os ativos. O Bitcoin variou 7,5% entre a mínima e a máxima do dia. O ouro à vista caiu 3% em poucas horas. O Ibovespa andou 1,9% entre a mínima e a máxima do pregão, e o dólar, 2,8% entre a máxima da manhã e a mínima da tarde. Já o S&amp;P 500, o índice das 500 maiores empresas americanas, fechou o dia com variação de apenas 0,25% — mas, por dentro, chegou a cair bem mais pela manhã. O balanço existe em todo lugar; o que muda é o tamanho.</p>
+  <p>E aqui está o ponto que mais confunde quem começa: <strong>volatilidade não diz se o preço vai subir ou cair</strong>. Ela diz só o tamanho do balanço esperado. Um ativo pode ser muito volátil e terminar o mês em alta — como o Bitcoin, que subiu 1,05% na quarta-feira mesmo depois de cair a US$ 57.300 pela manhã. Por isso o VIX, que mede volatilidade, não é um palpite sobre a direção da bolsa.</p>
+
+  <h2>3. O que é o VIX</h2>
+  <p>O <strong>VIX</strong> é o índice de volatilidade da <strong>Cboe</strong>, a bolsa de Chicago. Ele é calculado a partir dos preços das <strong>opções do S&amp;P 500</strong> e mede a volatilidade que o mercado espera para o índice nos <strong>próximos 30 dias</strong>. Por isso ele é chamado de "medidor de medo": quando os investidores ficam nervosos, pagam mais caro pela proteção — e o VIX sobe.</p>
+  <p>O número é lido em pontos, mas significa uma porcentagem anualizada. Quando o VIX marca <strong>28,29</strong>, como na quarta-feira, o mercado está precificando que o S&amp;P 500 deve se mover cerca de <strong>28,29% ao ano</strong>, para cima ou para baixo. Como ninguém pensa em um ano inteiro, o mercado converte esse número: dividido pela raiz quadrada de 12, dá o movimento esperado em um mês — <strong>cerca de 8,2%</strong>. Sobre o S&amp;P 500 aos 7.182,78 pontos, isso equivale a aproximadamente <strong>587 pontos para cima ou para baixo em 30 dias</strong>. Dividido pela raiz quadrada de 252, o número de pregões do ano, dá o movimento esperado em um dia: <strong>cerca de 1,8%</strong>.</p>
+  <p>Essa faixa é uma estimativa estatística de um desvio-padrão: em condições normais, há cerca de 68% de chance de o índice ficar dentro dela no período. Não é uma garantia nem um teto — é o tamanho do balanço que o mercado está precificando. Quando o VIX estava em 26,36 pontos, na terça-feira, a faixa mensal esperada era de cerca de 7,6%; com os 28,29 de quarta-feira, ela subiu para 8,2%. O mercado passou a esperar um balanço maior.</p>
+
+  <div class="quadro">
+    <div class="quadro-badge">Para entender</div>
+    <h3>Como 28,29 pontos viram 8,2% ao mês</h3>
+    <p>O VIX é uma taxa anualizada: 28,29 significa 28,29% ao ano. Para transformar um número anual em mensal, divide-se pela raiz quadrada de 12 (o número de meses do ano), que é aproximadamente 3,46. A conta é <strong>28,29 ÷ 3,46 = 8,17%</strong> — o movimento que o mercado espera para o S&amp;P 500 em 30 dias, para cima ou para baixo. Para o movimento de um dia, divide-se pela raiz quadrada de 252, o número de pregões do ano: 28,29 ÷ 15,87 = <strong>1,78%</strong> por dia. A conta não prevê direção: o índice pode subir 8% ou cair 8% — o VIX só mede o tamanho do balanço que está sendo precificado.</p>
+  </div>
+
+  <h2>4. Por que o VIX dispara quando as ações caem</h2>
+  <p>A explicação está nas <strong>opções de venda</strong>, as chamadas <i>puts</i>. Uma put é um contrato que dá ao comprador o direito de vender um ativo por um preço combinado, mesmo que o preço caia. Para um gestor que tem bilhões em ações, a put funciona como um seguro: se a bolsa despencar, o seguro paga. Quando o medo cresce, todo mundo quer comprar o seguro ao mesmo tempo — a demanda empurra o preço das opções para cima e, como o VIX é calculado a partir desses preços, <strong>o VIX sobe</strong>.</p>
+  <p>Há uma assimetria nesse mecanismo: as quedas empurram o VIX para cima muito mais rápido do que as altas o empurram para baixo. O medo faz o investidor correr para se proteger; a euforia não faz ninguém correr para comprar seguro. É essa assimetria que deu ao VIX o apelido de "medidor de medo" — e é por isso que, na quarta-feira, o VIX subiu 7,32% mesmo com o Dow fechando em alta: o susto da manhã, com o Nasdaq caindo 4,7% e a Nvidia chegando a US$ 141,17, fez o preço da proteção subir — e o susto não se desfez só porque o índice virou no fim do dia.</p>
+  <p>O contexto ajuda a entender o nível: o VIX fechou a terça-feira em 26,36 pontos e a quarta em 28,29 — bem acima da média histórica, que fica perto dos 20 pontos. Não é um dia isolado: o Nasdaq recua 3,46% em cinco pregões e o S&amp;P 500, 1,92% no mesmo período, com o noticiário empurrando os dois lados — o PCE de outubro veio a 3,8% ao ano, o PIB do 3º trimestre foi revisto para 4,3% e o mercado segue precificando uma alta de 0,25 ponto percentual nos juros do Fed na reunião de 8 e 9 de dezembro.</p>
+
+  <h2>5. Como ler o número</h2>
+  <p>O mercado lê o VIX por faixas, e elas valem como referência — não como regra gravada em pedra:</p>
+  <ul>
+    <li><strong>Abaixo de 15 pontos:</strong> calma. Os investidores esperam movimentos pequenos e o seguro está barato.</li>
+    <li><strong>Entre 15 e 20 pontos:</strong> normal. É a faixa em que o índice passa a maior parte do tempo — a média histórica fica perto dos 20.</li>
+    <li><strong>Entre 20 e 30 pontos:</strong> tensão elevada. Os balanços diários ficam maiores e as viradas intradia, mais comuns. É onde o VIX está hoje, com 28,29 pontos.</li>
+    <li><strong>Acima de 30 pontos:</strong> medo aberto. O seguro fica caro e o mercado precifica movimentos grandes.</li>
+    <li><strong>Acima de 40 pontos:</strong> pânico. Só aparece em crises: na crise financeira de 2008, o VIX passou dos 80 pontos; em março de 2020, na chegada da pandemia, bateu cerca de 82.</li>
+  </ul>
+  <p>O número sozinho não conta tudo — importa também a direção. Um VIX que cai de 40 para 28 conta uma história de alívio; um VIX que sobe de 15 para 28 conta uma história de nervosismo crescente. Hoje, o VIX está em 28,29 depois de marcar 26,36 na véspera: subindo, perto do patamar de medo aberto, em um mercado que virou o dia mas não virou o humor.</p>
+
+  <h2>6. VIX não é o mesmo que medo e ganância</h2>
+  <p>Na edição de hoje, outro número também fala de medo: o índice de <strong>medo e ganância</strong> das criptomoedas marcou <strong>11 pontos</strong> — o 14º dia seguido abaixo de 25, na faixa de "medo extremo". É fácil confundir os dois, mas eles medem coisas diferentes.</p>
+  <p>O índice de medo e ganância é um <strong>índice de sentimento</strong>: combina vários sinais — volatilidade, volume, redes sociais, pesquisas — em uma nota de 0 a 100. É um termômetro de humor. O <strong>VIX é um preço</strong>: ele nasce do dinheiro que os investidores estão de fato pagando por proteção nas opções do S&amp;P 500. Um mede o que as pessoas sentem; o outro mede o que elas estão pagando.</p>
+  <p>Os dois apontaram para o mesmo lado nesta quarta-feira — medo nas criptos, com o Bitcoin 52,0% abaixo da máxima histórica de US$ 126.080, e tensão na bolsa americana, com o VIX a 28,29. Mas eles podem divergir: o sentimento pode melhorar enquanto o preço da proteção segue alto, ou o inverso. Por isso o jornal traz os dois: o de medo e ganância apareceu pela primeira vez no artigo de 18 de novembro, sobre os termos do dia, e o VIX é o tema de hoje.</p>
+
+  <h2>7. O que o VIX não é</h2>
+  <p>Três confusões comuns valem um alerta:</p>
+  <ul>
+    <li><strong>Não prevê direção.</strong> Um VIX de 28,29 não diz que o S&amp;P 500 vai cair. Diz que o mercado espera um balanço de cerca de 8% em 30 dias — para cima ou para baixo. A virada da quarta-feira prova o ponto: o Dow caiu mais de 1.100 pontos pela manhã, o VIX subiu — e o Dow fechou em alta.</li>
+    <li><strong>Não dá para comprar o VIX como se compra uma ação.</strong> O VIX é um índice, não um ativo. O que existe são contratos futuros sobre o VIX e fundos que seguem esses futuros — produtos com dinâmica própria, que não replicam o índice ponto a ponto e carregam riscos que não cabem em um artigo de introdução.</li>
+    <li><strong>Não mede o medo de hoje.</strong> O VIX mede a expectativa para os próximos 30 dias, precificada agora. Um dia calmo pode ter VIX alto — e um dia de queda pode ter VIX em queda, se o mercado entender que o pior já passou.</li>
+  </ul>
+  <p>E um cuidado final: VIX alto não é, por si só, um sinal de compra ou de venda. Já coincidiu com quedas longas e com viradas fortes — como a desta quarta-feira. O que ele diz, com precisão, é uma só coisa: <strong>o tamanho do balanço que o mercado está precificando</strong>. Todo o resto é interpretação.</p>
+
+  <h2>8. O que observar daqui para frente</h2>
+  <ol>
+    <li><strong>Hoje, quinta, 26/11: Ação de Graças nos Estados Unidos</strong> — as bolsas americanas ficam fechadas; a B3 funciona normalmente. Sem pregão em Nova York, o VIX fica parado até sexta-feira.</li>
+    <li><strong>Sexta, 27/11: pregão curto nos Estados Unidos</strong> (Black Friday) — dia de volume menor, em que os movimentos costumam ser mais bruscos.</li>
+    <li><strong>Domingo, 29/11: reunião da Opep+</strong> — depois de o Brent subir 3,51%, a US$ 94,61 o barril, e o WTI avançar 2,47%, a US$ 84,08.</li>
+    <li><strong>Segunda, 30/11: último pregão de novembro</strong> — o mês fecha com o Nasdaq em queda e o VIX bem acima da média.</li>
+    <li><strong>Terça, 1º/12: Jensen Huang, presidente-executivo da Nvidia, depõe no Senado americano</strong> — dias depois de a ação cair 3,91% e acumular 30,88% de queda no mês.</li>
+    <li><strong>Terça e quarta, 8 e 9/12: Fed e Banco Central decidem os juros na mesma semana</strong> — o mercado precifica uma alta de 0,25 ponto percentual no Fed; o PCE de novembro só sai em 23 de dezembro, depois da decisão.</li>
+    <li><strong>Sexta, 11/12: o IPCA de novembro</strong> — o próximo capítulo do termômetro brasileiro.</li>
+  </ol>
+  <p>Volatilidade é o balanço; o VIX é a régua desse balanço, medida em dinheiro — no preço que os investidores pagam para se proteger. Quando ele passa dos 30 pontos, o seguro está caro e o mercado está dizendo, em voz alta, que espera movimentos grandes. Aprender a lê-lo é aprender a ouvir o que o mercado espera — sem confundir expectativa com previsão.</p>
+
+  <h2>O que vem nas próximas edições da série</h2>
+  <p>A Série Educação sai todos os dias no jornal. Amanhã, o tema é o Boletim Focus: como o mercado projeta dólar, inflação e PIB — e por que as projeções mudam toda semana. Na segunda-feira, o Focus trouxe o dólar de fim de 2026 a R$ 5,55, o IPCA a 5,15% e o PIB a 1,70%.</p>
+
+  <div class="fontes">
+    <strong>Fontes:</strong> Jornal PVSR INVEST, Edição nº 18 (26 de novembro de 2026) — Dow 50.182,95 (+0,33%), após cair mais de 1.100 pontos pela manhã; Nasdaq 23.585,80 (−0,62%), chegou a cair 4,7%; S&amp;P 500 7.182,78 (−0,25%), −1,92% em 5 pregões; VIX 28,29 (+7,32%), ante 26,36 na véspera; Nvidia US$ 149,30 (−3,91%), mínima de US$ 141,17, −30,88% no mês; Anthropic US$ 82,79 (+1,07%), abaixo do preço de estreia de US$ 83, mínima de US$ 73,85; Ibovespa 166.684,61 (+1,58%), máxima de 167.105,33, mínima de 164.042,13; dólar R$ 5,8179 (−1,53%), máxima de R$ 5,9734, mínima de R$ 5,8049; Bitcoin ~US$ 60,5 mil, mínima de US$ 57.300, máxima de US$ 61.622, 52,0% abaixo da máxima histórica de US$ 126.080; ouro à vista US$ 3.445,89, mínima desde agosto de 2025; prata à vista US$ 38,65 (−5,4%); Brent US$ 94,61 (+3,51%), WTI US$ 84,08 (+2,47%); índice de medo e ganância 11 pontos, 14º dia seguido abaixo de 25; liquidações de cerca de US$ 691 milhões em 24 horas; PCE de outubro 3,8% ao ano, núcleo 3,3%; PIB do 3º trimestre revisto para 4,3%; Treasury de 10 anos 4,85%; Boletim Focus (23/11) — dólar no fim de 2026 R$ 5,55, IPCA de 2026 5,15%, PIB de 2026 1,70%, Selic de 2027 13,00%; Cboe — definição do VIX: estimativa da volatilidade esperada do S&amp;P 500 nos próximos 30 dias, calculada a partir dos preços das opções do índice; faixas de leitura e máximas históricas (crise de 2008, acima de 80 pontos; março de 2020, cerca de 82).
+  </div>
+</article>
+
+</main>
+
+<footer>
+  <div class="footer-mono"><span class="mono-pvsr">PVSR</span> <span class="mono-invest">INVEST</span> <span class="footer-by">by PSVR Holding Tech</span></div>
+  <div class="footer-credit">Pedro Reis · PVSR INVEST by PSVR HOLDING TECH</div>
+  <div class="footer-note">Jornal PVSR INVEST by PSVR HOLDING TECH — Série Educação · 26 de novembro de 2026</div>
+</footer>
+
+<div class="aviso" style="max-width:1100px;margin:0 auto 40px;padding:16px 18px;">
+  <strong>Aviso importante:</strong> conteúdo informativo e educacional. Não é recomendação de investimento. Decisões de investimento devem considerar os seus próprios objetivos e a sua tolerância a risco — e, quando necessário, o acompanhamento de um profissional habilitado.
+</div>
+
+</body>
+</html>

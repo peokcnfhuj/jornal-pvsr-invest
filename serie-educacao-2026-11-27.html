@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aperto de vendidos (short squeeze): quando quem aposta na queda é obrigado a comprar · Série Educação — 27 de novembro de 2026 · Jornal PVSR INVEST by PSVR HOLDING TECH</title>
+<meta name="description" content="Série Educação do Jornal PVSR INVEST: o que é vender a descoberto, como nasce um aperto de vendidos, o que os US$ 240 milhões em liquidações da edição de hoje mostram — e a lição da GameStop em janeiro de 2021. Conteúdo informativo e educacional.">
+<style>
+:root{
+  --bg:#060608; --line:#232329; --hairline:#1c1c22;
+  --silver:#c0c0c8; --silver-dim:#8a8a94;
+  --gold:#c9a227; --gold-bright:#e8c85a; --gold-faint:rgba(201,162,39,.45);
+  --text:#f2f2f4; --text-dim:#b9b9c0;
+  --green:#4ade80; --red:#f87171;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;line-height:1.6;overflow-x:hidden}
+a{color:var(--gold-bright)}
+header,section,main,footer{position:relative;z-index:1}
+.masthead{border-bottom:1px solid var(--gold-faint);padding:0 0 22px}
+.masthead-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:16px 20px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--silver-dim)}
+.masthead-ed{color:var(--gold-bright)}
+.masthead-title{text-align:center;padding:26px 20px 4px}
+.monogram{font-weight:700;font-size:clamp(34px,7vw,52px);letter-spacing:.04em;line-height:1}
+.mono-pvsr{color:#e8e8ec}.mono-invest{color:var(--gold)}
+.masthead-sub{margin-top:12px;font-family:Arial,Helvetica,sans-serif;font-size:15px;letter-spacing:.22em;text-transform:uppercase;color:var(--silver)}
+.masthead-sub .gold{color:var(--gold-bright)}
+.masthead-tag{margin-top:10px;font-style:italic;color:var(--text-dim);font-size:16px}
+main{max-width:1100px;margin:0 auto;padding:0 20px 40px}
+h1{font-size:clamp(26px,4.5vw,42px);line-height:1.15;margin:10px 0 14px}
+h2{font-size:26px;line-height:1.2;margin:34px 0 10px;color:var(--gold-bright)}
+h3{font-size:20px;line-height:1.3;margin:26px 0 8px}
+p{font-size:17px;color:var(--text-dim);margin:0 0 14px}
+p strong,li strong{color:var(--text)}
+ul,ol{color:var(--text-dim);font-size:17px;margin:0 0 14px;padding-left:22px}
+li{margin-bottom:8px}
+.kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-bright)}
+.voltar{max-width:1100px;margin:0 auto;padding:16px 20px 0;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.voltar a{color:var(--gold-bright);text-decoration:none}
+.voltar a:hover{text-decoration:underline}
+.lead{font-size:19px;color:var(--text-dim);max-width:860px}
+.meta{margin-top:14px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--silver-dim)}
+.quadro{margin:26px 0;padding:6px 0 6px 24px;border-left:3px solid var(--gold)}
+.quadro-badge{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#111;background:var(--gold);padding:5px 12px;font-weight:700;margin-bottom:12px}
+.quadro h3{margin-top:0}
+.quadro p{font-size:17px;max-width:860px}
+.fonte{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--silver-dim);margin-top:6px}
+.fontes{margin-top:34px;padding-top:18px;border-top:1px solid var(--hairline);font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--silver-dim);line-height:1.7}
+.aviso{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:var(--silver-dim);margin-top:26px;padding:16px 18px;border:1px solid var(--gold-faint);background:rgba(201,162,39,.06)}
+footer{border-top:1px solid var(--gold-faint);padding:30px 20px 38px;text-align:center}
+.footer-mono{font-weight:700;font-size:30px;letter-spacing:.04em}
+.footer-by{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--silver-dim)}
+.footer-credit{margin-top:10px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:var(--silver)}
+.footer-note{margin-top:6px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--silver-dim)}
+hr.sep{border:0;border-top:1px solid var(--gold-faint);margin:56px 0}
+@media (max-width:600px){
+  main{padding:0 14px 40px}
+  .quadro{padding-left:18px}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span>Sexta-feira, 27 de novembro de 2026</span>
+    <span class="masthead-ed">Série Educação</span>
+    <span>PVSR INVEST by PSVR HOLDING TECH</span>
+  </div>
+  <div class="masthead-title">
+    <div class="monogram"><span class="mono-pvsr">PVSR</span> <span class="mono-invest">INVEST</span></div>
+    <div class="masthead-sub">Jornal <span class="gold">PVSR INVEST</span> by PSVR HOLDING TECH</div>
+    <div class="masthead-tag">Série Educação — o mercado explicado em linguagem simples, todos os dias.</div>
+  </div>
+</header>
+
+<div class="voltar"><a href="index.html">← Voltar ao jornal</a></div>
+
+<main>
+
+<article>
+  <div class="kicker">Série Educação · 27 de novembro de 2026</div>
+  <h1>Aperto de vendidos (short squeeze): quando quem aposta na queda é obrigado a comprar</h1>
+  <p class="lead">O Bitcoin subiu aos US$ 61,7 mil na manhã desta sexta-feira e, nas últimas 24 horas, cerca de US$ 240 milhões em posições foram liquidadas nas bolsas de criptomoedas. Desse total, 71% — US$ 170,4 milhões — eram de quem apostava na queda. Este artigo explica o que é vender a descoberto, como uma alta vira um aperto de vendidos, por que o mecanismo é automático nas criptomoedas — e o que a GameStop ensinou em janeiro de 2021, quando uma ação saiu de cerca de US$ 20 para US$ 347,51 em duas semanas.</p>
+  <div class="meta">27 de novembro de 2026 · Leitura de cerca de 13 minutos · Por Pedro Reis · PVSR INVEST by PSVR HOLDING TECH</div>
+
+  <h2>1. A manhã em que os vendidos pagaram a conta</h2>
+  <p>O <strong>Bitcoin</strong> era negociado a cerca de <strong>US$ 61,7 mil</strong> na manhã desta sexta-feira — aproximadamente R$ 354 mil —, em alta de 1,9% no dia. A criptomoeda fechou a quinta-feira a US$ 60.577, em alta de 0,2%, e chegou a <strong>US$ 62.249</strong> na manhã de hoje, com a mínima do dia em US$ 59.915. O <strong>Ethereum</strong> acompanhou: US$ 1.730 na manhã de hoje, cerca de R$ 9,94 mil, em alta de 2,1% no dia, depois de fechar a quinta-feira a US$ 1.690.</p>
+  <p>O detalhe que importa está nas liquidações. Nas últimas 24 horas, cerca de <strong>US$ 240 milhões</strong> em posições foram liquidadas nas dez bolsas acompanhadas pela CoinPerps — e <strong>US$ 170,4 milhões, ou 71% do total, eram posições vendidas</strong>, contra US$ 69,8 milhões em posições compradas. Só no Bitcoin, US$ 84,4 milhões foram liquidados; no Ethereum, US$ 56,0 milhões. Em outras palavras: a alta de hoje fechou à força quem apostava na queda — e cada fechamento forçado virou uma compra nova, empurrando o preço ainda mais para cima.</p>
+  <p>O contexto ajuda a medir o tamanho do movimento. O Bitcoin segue <strong>51,1% abaixo da máxima histórica</strong>, de US$ 126.080, marcada em 6 de outubro de 2025, e abaixo da média móvel de 200 semanas, perto de US$ 68.145 — 9,5% abaixo dela. O mercado segue em "medo extremo": o índice de medo e ganância marcou <strong>12 pontos</strong> hoje, o 15º dia seguido abaixo de 25. E hoje vencem cerca de <strong>US$ 7 bilhões em opções de Bitcoin</strong>, um gatilho de volatilidade no curto prazo. Não foi um dia de euforia — foi um dia em que quem estava vendido foi obrigado a sair.</p>
+  <p>A bolsa brasileira viveu o mesmo tipo de dia, em outra escala. O <strong>Ibovespa subiu 6,07%</strong> na quinta-feira, aos 176.799,84 pontos — a maior alta diária desde 5 de outubro (+7,70%) e a segunda maior desde janeiro de 2021 —, e as empresas da bolsa ganharam <strong>R$ 232 bilhões em valor de mercado em um só dia</strong>. Só a Suzano fechou em queda (−0,96%); 14 papéis subiram mais de 10%, com o Banco do Brasil em alta de 12,59% e o Bradesco, de 11,56%. Quando um mercado inteiro sobe 6% em um dia, quem apostava na queda sente o mesmo aperto — a diferença é que, nas criptomoedas, o aperto é automático e aparece nos números de liquidação em poucas horas.</p>
+
+  <h2>2. Vender a descoberto, em linguagem simples</h2>
+  <p>Para entender o aperto, primeiro é preciso entender a aposta que ele aperta. <strong>Vender a descoberto</strong> — o <i>short</i>, em inglês — é vender um ativo que você não tem, apostando que o preço vai cair. Parece estranho, mas o mecanismo é simples e tem quatro passos:</p>
+  <ol>
+    <li><strong>Pegar emprestado.</strong> O investidor aluga o ativo de alguém que o tem — uma ação na bolsa, por exemplo — e paga uma taxa de aluguel por isso.</li>
+    <li><strong>Vender agora.</strong> Ele vende o ativo alugado no mercado, pelo preço de hoje, e fica com o dinheiro.</li>
+    <li><strong>Recomprar depois.</strong> Se o preço cair, ele recompra o mesmo ativo mais barato.</li>
+    <li><strong>Devolver.</strong> Ele devolve o ativo a quem emprestou e fica com a diferença — menos o aluguel e as taxas.</li>
+  </ol>
+  <p>O lucro vem da queda. Mas há uma assimetria que é o coração deste artigo: <strong>quando você compra um ativo, o máximo que pode perder é o que investiu — o preço não cai abaixo de zero. Quando você vende a descoberto, o prejuízo não tem teto</strong>, porque o preço pode subir sem limite. Quem vendeu a descoberto a R$ 100 e vê o preço ir a R$ 130 perde R$ 30 por ação; se for a R$ 200, perde R$ 100; se for a R$ 500, perde R$ 400. É por isso que o vendido, diferente do comprado, pode ser obrigado a sair — e é essa obrigação que cria o aperto.</p>
+
+  <div class="quadro">
+    <div class="quadro-badge">Para entender</div>
+    <h3>A venda a descoberto em quatro números</h3>
+    <p>Imagine uma ação a <strong>R$ 100</strong>. Um investidor aluga 100 ações, vende todas e recebe <strong>R$ 10.000</strong>. Se o preço cair para <strong>R$ 80</strong>, ele recompra as 100 ações por R$ 8.000, devolve o empréstimo e fica com <strong>R$ 2.000 de lucro bruto</strong>, menos o aluguel e as taxas. Mas se o preço subir para <strong>R$ 130</strong>, ele precisa de R$ 13.000 para recomprar — <strong>R$ 3.000 de prejuízo</strong>, mais o aluguel. E, enquanto o preço sobe, a corretora pode exigir mais garantia: é a <strong>chamada de margem</strong>. Se ele não tiver o dinheiro, a corretora fecha a posição por ele — comprando as ações a qualquer preço. É esse fechamento forçado, em massa, que vira um aperto de vendidos.</p>
+  </div>
+
+  <h2>3. Como nasce o aperto</h2>
+  <p>O aperto de vendidos — o <i>short squeeze</i> — é um ciclo que se alimenta sozinho. Ele tem quatro etapas, e cada uma empurra a seguinte:</p>
+  <ul>
+    <li><strong>Muita gente vendida.</strong> Quando um ativo acumula muitas posições vendidas — muitos investidores apostando na queda ao mesmo tempo —, há uma fila de compradores futuros: todo vendido, mais cedo ou mais tarde, precisa recomprar para fechar a posição.</li>
+    <li><strong>Um gatilho de alta.</strong> Uma notícia, um dado ou um movimento de mercado empurra o preço para cima. No caso de hoje, o Bitcoin subiu de US$ 59.915 para US$ 62.249 em poucas horas.</li>
+    <li><strong>O fechamento forçado.</strong> Com o preço subindo, os vendidos começam a perder — e as corretoras e as bolsas começam a fechar as posições de quem não tem mais garantia. Cada fechamento é uma ordem de compra.</li>
+    <li><strong>A compra empurra o preço.</strong> As ordens de compra dos vendidos somam-se às compras normais, o preço sobe mais, mais vendidos são liquidados, e o ciclo se repete — até não restar mais ninguém para ser apertado.</li>
+  </ul>
+  <p>O ponto central é que <strong>a compra do vendido não é uma escolha: é uma obrigação</strong>. Quem comprou um ativo pode esperar a queda passar; quem vendeu a descoberto, não — a corretora ou a bolsa fecha a posição quando a garantia acaba. Por isso o aperto é tão rápido: ele não depende de ninguém mudar de ideia, só de o preço subir o suficiente para acionar os fechamentos automáticos.</p>
+  <p>Há um detalhe que confunde muita gente: <strong>o aperto não precisa de um motivo "bom" para o ativo</strong>. O preço sobe porque há mais compras do que vendas naquele momento — e as compras dos vendidos são compras como quaisquer outras. O ativo pode continuar valendo o mesmo de antes, e ainda assim o preço disparar por dias, enquanto houver vendidos sendo fechados. Quando o aperto termina, o preço costuma voltar — às vezes, depressa.</p>
+
+  <h2>4. O caso GameStop: o aperto que virou aula</h2>
+  <p>O exemplo mais documentado da história aconteceu em janeiro de 2021, com a <strong>GameStop</strong>, uma rede americana de lojas de videogames em dificuldade. O caso foi investigado pela SEC, a comissão de valores mobiliários dos Estados Unidos, que publicou um relatório detalhado em 14 de outubro de 2021 — e os números abaixo vêm desse relatório.</p>
+  <p>A preparação era extrema: durante quase todo o ano de 2020, as posições vendidas na GameStop giravam em torno de 100% das ações disponíveis para negociação — o chamado <i>float</i> — e, em janeiro de 2021, o índice chegou a <strong>122,97% do float</strong>. Isso significa que havia mais ações vendidas a descoberto do que ações disponíveis no mercado: a mesma ação tinha sido emprestada e vendida mais de uma vez. A SEC observou que a GameStop foi a única ação, naquele mês, com posições vendidas acima do total de ações em circulação.</p>
+  <p>O gatilho foi corporativo: em 11 de janeiro de 2021, a empresa anunciou que Ryan Cohen, cofundador da Chewy, entraria para o conselho. Em 13 de janeiro, a ação fechou a US$ 31,40, contra US$ 19,95 no dia anterior, com cerca de 144 milhões de ações negociadas — ante cerca de 7 milhões no dia anterior. Em 22 de janeiro, o preço saltou de US$ 43 para US$ 72 em cerca de três horas, no dia de maior volume do mês, com 197,2 milhões de ações negociadas. Em 27 de janeiro, a ação fechou a <strong>US$ 347,51</strong> — mais de 1.600% acima do fechamento de 11 de janeiro. No dia seguinte, tocou <strong>US$ 483,00</strong> durante o pregão. Da mínima intradia de 8 de janeiro à máxima de 28 de janeiro, a alta foi de cerca de 2.700%.</p>
+  <p>O desfecho é a outra metade da lição. Em 28 de janeiro, várias corretoras passaram a permitir só a venda da ação, e o preço fechou o dia a US$ 193,60. Em poucas semanas, a maior parte da alta se desfez: o preço caiu mais de 86% da máxima até o fim da primeira semana de fevereiro. E há um nuance que o relatório da SEC registrou com cuidado: <strong>o fechamento de posições vendidas contribuiu para a alta, mas foi uma fração pequena do volume total de compras</strong> — o que sustentou a disparada foi o sentimento positivo e a entrada em massa de investidores individuais, não só o aperto. O aperto foi real, mas não foi o único motor. Essa é a leitura honesta do caso: o mecanismo existe, ele acelera movimentos — e ele não explica tudo sozinho.</p>
+
+  <h2>5. Por que nas criptomoedas o aperto é mais rápido</h2>
+  <p>O que aconteceu com o Bitcoin hoje segue o mesmo mecanismo da GameStop, mas em uma versão acelerada — por três razões.</p>
+  <p>A primeira é a <strong>alavancagem</strong>. Nas bolsas de criptomoedas, é comum operar com dinheiro emprestado multiplicando a posição — 5, 10 ou 20 vezes o capital. Com alavancagem, um movimento pequeno no preço já é suficiente para zerar a garantia e acionar a liquidação. É por isso que US$ 240 milhões foram liquidados em 24 horas com uma alta de apenas 1,9% no dia: muita gente operava com a corda esticada.</p>
+  <p>A segunda é a <strong>liquidação automática</strong>. Na bolsa de valores, a corretora liga, dá prazo e cobra mais garantia — a chamada de margem. Nas bolsas de criptomoedas, não há telefonema: quando a garantia acaba, o sistema fecha a posição sozinho, na hora, ao preço de mercado. Não há negociação nem espera. É por isso que 71% das liquidações de hoje foram de vendidos: o sistema não pergunta, executa.</p>
+  <p>A terceira é o <strong>horário</strong>. O mercado de criptomoedas não fecha: funciona 24 horas por dia, sete dias por semana. O aperto pode começar de madrugada — como o Bitcoin, que tocou US$ 61.622 ainda na madrugada de quarta-feira — e não há pregão para interromper o ciclo. Some-se a isso o vencimento de hoje, de cerca de US$ 7 bilhões em opções de Bitcoin, e o quadro fica completo: um mercado alavancado, automático e sem pausa é o terreno ideal para um aperto rápido.</p>
+  <p>Há ainda um dado que mostra o outro lado da mesa. Enquanto os vendidos eram liquidados, os fundos de índice de Bitcoin negociados nos Estados Unidos registraram, na quarta-feira, saídas de US$ 453,1 milhões — a sétima seguida —, e os de Ethereum, saídas de US$ 68,5 milhões, a nona seguida. Ou seja: o dinheiro institucional seguia saindo, e a alta de hoje foi movida, em boa parte, pelo fechamento forçado de quem estava vendido — não por uma onda nova de compradores. É o retrato clássico do aperto: o preço sobe, mas o motivo da alta não é otimismo — é obrigação.</p>
+
+  <h2>6. Os sinais de que um aperto pode estar se formando</h2>
+  <p>Ninguém prevê um aperto com certeza — mas o mercado acompanha três medidas que mostram quando o terreno está fértil:</p>
+  <ul>
+    <li><strong>Posições vendidas em aberto (<i>short interest</i>).</strong> É a quantidade de ações vendidas a descoberto e ainda não recompradas, geralmente expressa como porcentagem do <i>float</i>. Quando o número é alto, há muitos compradores obrigatórios esperando. O caso GameStop, com 122,97% do float, é o extremo histórico — mas qualquer nível elevado já indica um mercado lotado de vendidos.</li>
+    <li><strong>Dias para cobrir (<i>days to cover</i>).</strong> É o tempo que levaria para todos os vendidos recomprarem suas posições, ao ritmo do volume diário normal. Se o número é alto, significa que fechar tudo levaria dias — e que, se todos tentarem sair ao mesmo tempo, o preço vai sentir.</li>
+    <li><strong>Custo do aluguel.</strong> Quando muita gente quer alugar o mesmo ativo para vender, o aluguel fica caro. Um custo de aluguel alto é o mercado dizendo, em preço, que há muita gente apostando na queda — e que cada dia vendido custa dinheiro.</li>
+  </ul>
+  <p>Nas criptomoedas, o equivalente aparece nos dados de liquidação: quando as liquidações de vendidos passam a dominar o total — como os 71% de hoje —, o aperto já está acontecendo, e não apenas se formando. A leitura prática é a mesma nos dois mercados: <strong>muita gente do mesmo lado, com a saída obrigatória, é combustível para um movimento brusco</strong> — para cima, se os vendidos forem apertados; para baixo, se os comprados alavancados forem liquidados.</p>
+
+  <h2>7. O que o aperto não é</h2>
+  <p>Três confusões comuns valem um alerta — porque é nelas que o investidor iniciante mais perde dinheiro:</p>
+  <ul>
+    <li><strong>Não é um sinal de compra.</strong> Um aperto empurra o preço para cima, mas não muda o valor do ativo. A GameStop subiu 2.700% em três semanas e devolveu mais de 86% da alta nas semanas seguintes. O Bitcoin subiu hoje e segue 51,1% abaixo da máxima histórica. O preço que sobe por aperto é um preço emprestado: quando os vendidos acabam, acaba o combustível.</li>
+    <li><strong>Não é um movimento para perseguir.</strong> Quem entra no meio de um aperto está comprando de quem já lucrou — e vendendo, muitas vezes, para os vendidos que estão fechando a posição. O aperto é um evento de quem já estava posicionado antes dele começar. Chegar depois é pagar o preço cheio de um movimento que já aconteceu.</li>
+    <li><strong>Não protege ninguém do outro lado.</strong> O aperto também pode acontecer ao contrário: quando muita gente compra alavancada e o preço cai, as liquidações de comprados empurram o preço ainda mais para baixo. É o mesmo mecanismo, espelhado. A edição de ontem registrou liquidações de cerca de US$ 691 milhões em 24 horas, no sentido oposto — comprados sendo fechados à força em uma queda. O risco é simétrico; só muda o lado que sofre.</li>
+  </ul>
+  <p>E um cuidado final: vender a descoberto sem limite de perda é uma operação de risco alto, feita por profissionais com garantias e controles — não é um ponto de partida para quem está começando. A lição do aperto, para o leitor desta série, não é "como apostar na queda" nem "como surfar um aperto": é <strong>reconhecer o mecanismo quando ele aparecer no jornal</strong> — e entender por que um preço pode subir muito, muito rápido, sem que nada tenha mudado no ativo.</p>
+
+  <h2>8. O que observar daqui para frente</h2>
+  <ol>
+    <li><strong>Hoje, sexta, 27/11: pregão curto nos Estados Unidos</strong> (fecha às 13h de Nova York, 15h de Brasília) e Black Friday; a B3 funciona normalmente. Vencem cerca de US$ 7 bilhões em opções de Bitcoin.</li>
+    <li><strong>Domingo, 29/11: reunião da Opep+</strong> — depois de o Brent subir 1,94%, a US$ 96,44 o barril, e o WTI avançar 1,54%, a US$ 84,97.</li>
+    <li><strong>Segunda, 30/11: último pregão de novembro</strong> — e sai o novo Boletim Focus do Banco Central, com as projeções de dólar, inflação e PIB.</li>
+    <li><strong>Terça, 01/12: Jensen Huang, presidente-executivo da Nvidia, depõe no Senado americano.</strong></li>
+    <li><strong>Terça, 08/12: Pesquisa Mensal de Comércio de outubro (IBGE); sexta, 11/12: IPCA de novembro.</strong></li>
+    <li><strong>Terça e quarta, 08–09/12: o Fed decide os juros e o Banco Central do Brasil decide a Selic na mesma semana</strong> — o mercado precifica uma alta de 0,25 ponto percentual no Fed; a Selic segue em 13,75% ao ano.</li>
+    <li><strong>Quarta, 23/12: sai o PCE de novembro nos Estados Unidos</strong> — depois da decisão do Fed.</li>
+  </ol>
+  <p>Um aperto de vendidos é o mercado cobrando a conta de quem apostou contra ele — e cobrando de uma vez, em compras forçadas. Hoje, a conta chegou para os vendidos de Bitcoin: US$ 170,4 milhões liquidados em 24 horas, 71% de tudo o que foi liquidado. Entender esse mecanismo é entender por que os preços, às vezes, disparam sem uma boa notícia — e por que, nesses dias, a pergunta certa não é "até onde vai subir", e sim "quem ainda falta ser apertado".</p>
+
+  <h2>O que vem nas próximas edições da série</h2>
+  <p>A Série Educação sai todos os dias no jornal. Na segunda-feira, com o novo Boletim Focus, o tema é o Focus: como o mercado projeta dólar, inflação e PIB — e por que as projeções mudam toda semana. É o tema prometido ontem, adiado para o dia em que o dado novo sai: na segunda, o Focus traz o dólar de fim de 2026 a R$ 5,55, o IPCA a 5,15% e o PIB a 1,70% — ou números novos, se as projeções mudarem.</p>
+
+  <div class="fontes">
+    <strong>Fontes:</strong> Jornal PVSR INVEST, Edição nº 19 (27 de novembro de 2026) — Ibovespa 176.799,84 (+6,07%), maior alta diária desde 5 de outubro (+7,70%), segunda maior desde janeiro de 2021; empresas da bolsa ganharam R$ 232 bilhões em valor de mercado em um só dia; volume de R$ 35,9 bilhões; só a Suzano fechou em queda (−0,96%); 14 papéis subiram mais de 10%; Banco do Brasil +12,59%, Bradesco +11,56%; dólar R$ 5,744 (−1,25%); IPCA-15 de novembro 0,22%; Selic 13,75% ao ano; Bitcoin ~US$ 61,7 mil (+1,9% no dia), fechamento de quinta US$ 60.577 (+0,2%), máxima de US$ 62.249, mínima de US$ 59.915, 51,1% abaixo da máxima histórica de US$ 126.080 (6 de outubro de 2025), abaixo da média móvel de 200 semanas (~US$ 68.145); Ethereum US$ 1.730 (+2,1%), fechamento de quinta US$ 1.690, 65,0% abaixo da máxima histórica de US$ 4.946,05; liquidações de cerca de US$ 240 milhões em 24 horas (CoinPerps, 10 bolsas): US$ 170,4 milhões em vendidos (71%) e US$ 69,8 milhões em compradas; Bitcoin US$ 84,4 milhões liquidados, Ethereum US$ 56,0 milhões; índice de medo e ganância 12 pontos, 15º dia seguido abaixo de 25; hoje vencem cerca de US$ 7 bilhões em opções de Bitcoin; ETFs de Bitcoin: saídas de US$ 453,1 milhões na quarta (7ª seguida); ETFs de Ethereum: saídas de US$ 68,5 milhões (9ª seguida); Brent US$ 96,44 (+1,94%), WTI US$ 84,97 (+1,54%); VIX 28,29; Boletim Focus (23/11) — dólar no fim de 2026 R$ 5,55, IPCA de 2026 5,15%, PIB de 2026 1,70%, Selic de 2027 13,00%; SEC, Staff Report on Equity and Options Market Structure Conditions in Early 2021, 14 de outubro de 2021 — GameStop: posições vendidas de 122,97% do float em janeiro de 2021; fechamento de US$ 347,51 em 27 de janeiro de 2021; máxima intradia de US$ 483,00 em 28 de janeiro de 2021; fechamento de US$ 31,40 em 13 de janeiro de 2021, ante US$ 19,95; volume de 197,2 milhões de ações em 22 de janeiro de 2021; queda de mais de 86% da máxima até o fim da primeira semana de fevereiro; fechamento de posições vendidas como fração pequena do volume total de compras.
+  </div>
+</article>
+
+</main>
+
+<footer>
+  <div class="footer-mono"><span class="mono-pvsr">PVSR</span> <span class="mono-invest">INVEST</span> <span class="footer-by">by PSVR Holding Tech</span></div>
+  <div class="footer-credit">Pedro Reis · PVSR INVEST by PSVR HOLDING TECH</div>
+  <div class="footer-note">Jornal PVSR INVEST by PSVR HOLDING TECH — Série Educação · 27 de novembro de 2026</div>
+</footer>
+
+<div class="aviso" style="max-width:1100px;margin:0 auto 40px;padding:16px 18px;">
+  <strong>Aviso importante:</strong> conteúdo informativo e educacional. Não é recomendação de investimento. Decisões de investimento devem considerar os seus próprios objetivos e a sua tolerância a risco — e, quando necessário, o acompanhamento de um profissional habilitado.
+</div>
+
+</body>
+</html>
